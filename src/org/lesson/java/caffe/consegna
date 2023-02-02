@@ -1,0 +1,39 @@
+Esercizio: macchina del caffé
+
+Scrivere una classe MacchinaCaffé contenente i seguenti attributi:
+- elencoBevande: lista di oggetti della classe Bevanda
+- mappaMonete: mappa di <BigDecimal,Integer>
+
+e i seguenti metodi:
+- aggiungiMoneta(BigDecimal moneta)
+- erogaBevanda(int numeroBevanda)
+- Bevanda getBevanda(int numeroBevanda) : ritorna la bevanda associata a quel numero
+
+- costruttore: inizializza l'elencoBevande con:
+	-caffé normale: costo 0,50
+	-caffé macchiato: costo 0,60
+	-caffé al ginseng: costo 0,70
+	
+	e mappaMonete con le seguenti coppie:
+		key 	value
+		0,05	0
+		0,10	0
+		0,20	0
+		0,50	0
+		1		0
+		2		0
+		
+
+nella classe main:
+	-chiedere all'utente il numero della bevanda desiderata (da 0 a 2)
+	-mostrare il costo della bevanda
+	-chiedere all'utente di inserire le monete (continuare fino al raggiungimento/superamento del costo)
+		(chiamando di volta in volta il metodo aggiungiMoneta)
+	-chiamare il metodo erogaBevanda (che mostra un messaggio "bevanda <nomebevanda> erogata!"
+
+
+la classe Bevanda avrà gli attributi:
+	-nome
+	-prezzo
+	
+	+ costruttore, getter, setter
